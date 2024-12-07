@@ -1,4 +1,4 @@
-defmodule Task1.Solution do
+defmodule Day1.Solution do
   def readInput(raw) do
     raw
       |> String.split("\n")
