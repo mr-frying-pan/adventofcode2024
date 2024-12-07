@@ -5,8 +5,12 @@ defmodule Aoc2024Test do
     assert IO.inspect(Aoc2024.day1())
   end
 
-  @tag current: true
   test "solves day 2 task" do
     assert IO.inspect(Aoc2024.day2())
+  end
+
+  @tag current: true
+  test "solves day 3 task" do
+    assert IO.inspect(Aoc2024.day3())
   end
 end

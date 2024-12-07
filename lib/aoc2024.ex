@@ -14,4 +14,12 @@ defmodule Aoc2024 do
       Day2.Solution.part2(reports)
     }
   end
+
+  def day3 do
+    corrupted = Day3.Solution.readInput(File.read!("lib/Day3/input"))
+    {
+      Day3.Solution.part1(corrupted),
+      Day3.Solution.part2(corrupted)
+    }
+  end
 end
