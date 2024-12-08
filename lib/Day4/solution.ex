@@ -1,4 +1,4 @@
-defmodule Day4.Solution do
+defmodule Day4 do
   def readInput(raw) do
     String.split(raw)
       |> Enum.with_index()

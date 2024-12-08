@@ -1,4 +1,4 @@
-defmodule Day3.Solution do
+defmodule Day3 do
   def readInput(raw) do
     raw
   end

@@ -1,4 +1,4 @@
-defmodule Day2.Solution do
+defmodule Day2 do
   def readInput(raw) do
     raw
       |> String.split("\n")
