@@ -96,32 +96,32 @@ defmodule Day6 do
     end
   end
 
-  def part2(map) do
-    { start_r, start_c, start_dir } = find_start_position(map)
+  # def part2(map) do
+  #   { start_r, start_c, start_dir } = find_start_position(map)
 
-     walk2(map, start_r, start_c, start_dir, 0)
-  end
+  #    walk2(map, start_r, start_c, start_dir, 0)
+  # end
 
-  defp walk2(map, r, c, dir, loops) do
-    if out_of_map(map, r, c) do
-      loops
-    else
-      current_pos = map.map |> Enum.at(r) |> Enum.at(c)
+  # defp walk2(map, r, c, dir, loops) do
+  #   if out_of_map(map, r, c) do
+  #     loops
+  #   else
+  #     current_pos = map.map |> Enum.at(r) |> Enum.at(c)
 
-      { r_inc, c_inc } = direction(dir)
+  #     { r_inc, c_inc } = direction(dir)
 
-      loop_possible = look_right(map, r, c, dir)
+  #     loop_possible = look_right(map, r, c, dir)
 
-      case current_pos do
-        "." -> # new position
-          updated_map = mark_visited2(map, r, c, dir)
-          walk2(updated_map, r + r_inc, c + c_inc, dir)
-        "#" -> # obstacle - go back and turn right
-          walk2(map, r - r_inc, c - c_inc, turn_right2(dir))
-        _ -> # previously visited position
-          updated_map = mark_visited(map, r, c, dir)
-          walk2(map, r + r_inc, c + c_inc, dir)
-      end
-    end
-  end
+  #     case current_pos do
+  #       "." -> # new position
+  #         updated_map = mark_visited2(map, r, c, dir)
+  #         walk2(updated_map, r + r_inc, c + c_inc, dir)
+  #       "#" -> # obstacle - go back and turn right
+  #         walk2(map, r - r_inc, c - c_inc, turn_right2(dir))
+  #       _ -> # previously visited position
+  #         updated_map = mark_visited(map, r, c, dir)
+  #         walk2(map, r + r_inc, c + c_inc, dir)
+  #     end
+  #   end
+  # end
 end

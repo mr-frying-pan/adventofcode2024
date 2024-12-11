@@ -46,4 +46,11 @@ defmodule Aoc2024 do
       Day6.part2(map)
     }
   end
+
+  def day7() do
+    equations = Day7.readInput(File.read!("lib/Day7/input"))
+    {
+      Day7.part2(equations)
+    }
+  end
 end

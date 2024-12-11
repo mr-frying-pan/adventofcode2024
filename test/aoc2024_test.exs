@@ -21,8 +21,12 @@ defmodule Aoc2024Test do
     IO.inspect(Aoc2024.day5())
   end
 
-  @tag current: true
   test "solves day 6 task" do
     IO.inspect(Aoc2024.day6())
+  end
+
+  @tag current: true
+  test "solves day 7 task" do
+    IO.inspect(Aoc2024.day7())
   end
 end
