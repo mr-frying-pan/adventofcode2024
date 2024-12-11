@@ -38,4 +38,12 @@ defmodule Aoc2024 do
       Day5.part2(rules, updates)
     }
   end
+
+  def day6() do
+    map = Day6.readInput(File.read!("lib/Day6/lil_input"))
+    {
+      Day6.part1(map),
+      Day6.part2(map)
+    }
+  end
 end
