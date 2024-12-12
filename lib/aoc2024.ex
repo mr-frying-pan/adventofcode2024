@@ -53,4 +53,12 @@ defmodule Aoc2024 do
       Day7.part2(equations)
     }
   end
+
+  def day11() do
+    stones = Day11.readInput(File.read!("lib/Day11/input"))
+    {
+      Day11.part1(stones),
+      Day11.part2(stones)
+    }
+  end
 end
