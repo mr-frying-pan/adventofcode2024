@@ -41,13 +41,15 @@ defmodule Day11 do
         stones_25 = blink([stone], 25)
         IO.inspect({"Stones 25", length(stones_25)})
         stones_25
-          |> Enum.map(fn stone_25 -> Task.async(fn -> blink([stone_25], 25) end) end)
-          |> Enum.map(fn task_50 ->
-                        stones_50 = Task.await(task_50, :infinity)
+          |> Enum.map(fn stone_25 ->
+                        stones_50 = blink([stone_25], 25)
                         IO.inspect({ "Stones 50", length(stones_50)})
                         stones_50
-                          |> Enum.map(fn stone_50 -> Task.async(fn -> blink([stone_50], 25) end) end)
-                          |> Enum.map(fn task_75 -> length(Task.await(task_75, :infinity)) end)
+                          |> Enum.map(fn stone_50 ->
+                                        stones_75 = blink([stone_50], 25)
+                                        len = length(stones_75)
+                                        len
+                                      end)
                           |> Enum.sum()
                       end)
           |> Enum.sum()
