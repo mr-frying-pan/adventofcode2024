@@ -43,7 +43,7 @@ defmodule Aoc2024 do
     map = Day6.readInput(File.read!("lib/Day6/lil_input"))
     {
       Day6.part1(map),
-      Day6.part2(map)
+      # Day6.part2(map)
     }
   end
 
@@ -59,6 +59,14 @@ defmodule Aoc2024 do
     {
       Day11.part1(stones),
       Day11.part2(stones)
+    }
+  end
+
+  def day12() do
+    plot = Day12.readInput(File.read!("lib/Day12/input"))
+    {
+      Day12.part1(plot),
+      Day12.part2(plot)
     }
   end
 end
