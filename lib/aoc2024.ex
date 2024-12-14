@@ -69,4 +69,15 @@ defmodule Aoc2024 do
       Day12.part2(plot)
     }
   end
+
+  def day14() do
+    robots = Day14.readInput(File.read!("lib/Day14/input"))
+    rs = 103
+    cs = 101
+    seconds = 100
+    {
+      Day14.part1(robots, rs, cs, seconds),
+      Day14.part2(robots, rs, cs)
+    }
+  end
 end
