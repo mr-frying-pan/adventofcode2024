@@ -38,6 +38,10 @@ defmodule Aoc2024Test do
   end
 
   @tag current: true
+  test "solves day 13 task" do
+    IO.inspect(Aoc2024.day13())
+  end
+
   @tag timeout: :infinity
   test "solves day 14 task" do
     IO.inspect(Aoc2024.day14())

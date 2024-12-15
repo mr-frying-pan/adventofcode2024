@@ -70,6 +70,13 @@ defmodule Aoc2024 do
     }
   end
 
+  def day13() do
+    machines = Day13.readInput(File.read!("lib/Day13/lil_input"))
+    {
+      Day13.part1(machines)
+    }
+  end
+
   def day14() do
     robots = Day14.readInput(File.read!("lib/Day14/input"))
     rs = 103
