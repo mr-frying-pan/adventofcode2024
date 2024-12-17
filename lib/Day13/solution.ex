@@ -25,10 +25,8 @@ defmodule Day13 do
       |> Enum.map(&get_a_b_counts/1)
   end
 
-  @doc """
-  Interpreting all values as vectors.
-  Then calculating prize vector coordinates in terms of vectors A and B.
-  """
+  # Interpreting all values as vectors.
+  # Then calculating prize vector coordinates in terms of vectors A and B.
   defp get_a_b_counts(%Machine{a: {xa, ya}, b: {xb, yb}, prize: {xp, yp}}) do
     # According to https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/66b42ce6c35f2757ad11dc0a6e2b2896_MIT16_07F09_Lec03.pdf
     # page 10, equation 7

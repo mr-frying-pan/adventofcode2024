@@ -87,4 +87,11 @@ defmodule Aoc2024 do
       Day14.part2(robots, rs, cs)
     }
   end
+
+  def day15() do
+    # { map, moves } = Day15.readInput(File.read!("lib/Day15/input1"))
+    # Day15.part1(map, moves)
+    { map, moves } = Day15.readInput(File.read!"lib/Day15/input2")
+    Day15.part2(map, moves)
+  end
 end
