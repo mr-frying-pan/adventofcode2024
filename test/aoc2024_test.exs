@@ -41,7 +41,7 @@ defmodule Aoc2024Test do
     IO.inspect(Aoc2024.day13())
   end
 
-  @tag timeout: :infinity
+  @tag timeout: :infinity # because of image generation
   test "solves day 14 task" do
     IO.inspect(Aoc2024.day14())
   end
@@ -50,9 +50,13 @@ defmodule Aoc2024Test do
     IO.inspect(Aoc2024.day15())
   end
 
-  @tag current: true
-  @tag timeout: :infinity
   test "solves day 17 task" do
     IO.inspect(Aoc2024.day17())
+  end
+
+  @tag current: true
+  @tag timeout: :infinity
+  test "solves day 18 task" do
+    IO.inspect(Aoc2024.day18())
   end
 end

@@ -99,4 +99,8 @@ defmodule Aoc2024 do
     {computer, program} = Day17.readInput(File.read!("lib/Day17/input"))
     Day17.part1(computer, program)
   end
+
+  def day18() do
+    Day18.readInput(File.read!("lib/Day18/lil_input"))
+  end
 end
